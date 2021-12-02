@@ -1,0 +1,21 @@
+configmap:
+  enabled: true
+  name: aws-auth
+data:
+  mapAccounts: |
+    - "<aws-account-no>"
+  mapRoles: |
+    - "groups":
+      - "system:bootstrappers"
+      - "system:nodes"
+      "rolearn": "arn:aws:iam::<aws-account-no>:role/<aws-iam-role>"
+      "username": "system:node:{{EC2PrivateDNSName}}"
+  mapUsers: |
+    - "groups":
+      - "system:masters"
+      "userarn": "arn:aws:iam::<aws-account-no>:user/<iam-user1>"
+      "username": "<iam-user1>"
+    - "groups":
+      - "system:masters"
+      "userarn": "arn:aws:iam::<aws-account-no>:user/<iam-user-2>"
+      "username": "<iam-user-2>"
