@@ -1,8 +1,9 @@
 # Overview: This repo is for setting up AWS EKS demo cluster using Terraform base modules and helm
 
-### ! Note :
-#### 1.VPC and Subnets are created automatically as part of this implementation.
-#### 2.Make sure to install following cli tools upfront.
+### !! Note :
+#### 1. In this EKS Setup Control Plane managed by AWS and Worker Nodes managed by User.
+#### 2. VPC and Subnets are created automatically as part of this implementation.
+#### 3.Make sure to install following cli tools upfront.
 ```
 kubectl
 terraform
