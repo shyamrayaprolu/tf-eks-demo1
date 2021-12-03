@@ -6,8 +6,8 @@ locals {
   aws-region    = "<aws-region>"
   environment   = "<environment>"
   account_id    = "<aws-account-no>"
-  stackname     = "<eks>"
-  subsystem_val = "<demo1>"
+  stackname     = "aws"
+  subsystem_val = "demo1"
 
   #vpc related config values
   vpc_name                = "${local.stackname}-${local.subsystem_val}-vpc"
