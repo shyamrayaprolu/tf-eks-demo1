@@ -3,7 +3,7 @@
 ### !! Note :
 #### 1. In this EKS Setup Control Plane is managed by AWS and Worker Nodes managed by User.
 #### 2. VPC and Subnets are created automatically as part of this implementation.
-#### 3.Make sure to install following cli tools upfront.
+#### 3. Make sure to install following cli tools upfront.
 ```Cancel changes
 kubectl
 terraform
